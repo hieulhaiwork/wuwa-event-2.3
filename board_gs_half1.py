@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
     NUM_ITER = 1000000
 
-    for _ in tqdm(range(NUM_ITER), desc="No of iter:"):
+    for _ in tqdm(range(NUM_ITER), desc="Num of iters:"):
         cubes = simulate(verbose=False)
         rank1_cube = [cube.name for cube in cubes if cube.finished_rank == 1][0]
         statistic_board[rank1_cube] += 1
